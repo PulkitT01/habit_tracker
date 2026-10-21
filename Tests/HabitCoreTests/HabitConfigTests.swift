@@ -17,6 +17,7 @@ import Testing
         #expect(config.habits.map(\.id) == [
             "weight", "sleep", "stretching", "creatine",
             "pushups", "squats", "dead_hang", "negatives", "applications", "study", "read", "socializing",
+            "german_course", "german_vocab", "german_listening", "german_speaking",
         ])
         #expect(config.habits.allSatisfy { $0.activeFrom == start && $0.activeTo == nil })
 

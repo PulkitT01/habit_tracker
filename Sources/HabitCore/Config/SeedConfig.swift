@@ -45,6 +45,7 @@ public enum SeedConfig {
             {
               "id": "pushups",
               "name": "Push-ups",
+              "description": "Total reps across all sets today.",
               "type": "count",
               "unit": "reps",
               "min_target": 5,
@@ -55,6 +56,7 @@ public enum SeedConfig {
             {
               "id": "squats",
               "name": "Squats",
+              "description": "Total reps across all sets today.",
               "type": "count",
               "unit": "reps",
               "min_target": 5,
@@ -115,6 +117,42 @@ public enum SeedConfig {
               "tags": ["india", "here", "new people"],
               "prompt": "evening",
               "order": 80,
+              "active_from": "\(activeFrom)"
+            },
+            {
+              "id": "german_course",
+              "name": "German: course",
+              "description": "20 min of the structured course.",
+              "type": "binary",
+              "prompt": "evening",
+              "order": 90,
+              "active_from": "\(activeFrom)"
+            },
+            {
+              "id": "german_vocab",
+              "name": "German: flashcards",
+              "description": "15 min of vocabulary flashcards.",
+              "type": "binary",
+              "prompt": "evening",
+              "order": 100,
+              "active_from": "\(activeFrom)"
+            },
+            {
+              "id": "german_listening",
+              "name": "German: listening",
+              "description": "15 min of German on YouTube.",
+              "type": "binary",
+              "prompt": "evening",
+              "order": 110,
+              "active_from": "\(activeFrom)"
+            },
+            {
+              "id": "german_speaking",
+              "name": "German: speaking",
+              "description": "10 min of speaking aloud; shadowing (repeating audio after the speaker) counts.",
+              "type": "binary",
+              "prompt": "evening",
+              "order": 120,
               "active_from": "\(activeFrom)"
             }
           ]

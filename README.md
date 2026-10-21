@@ -33,7 +33,7 @@ make install   # build, copy to ~/Applications/HabitTracker.app, and launch
 1. Allow notifications when macOS asks.
 2. Open the popover, go to **Settings** and turn on **Launch at login**. That way the app is
    always running and reminds you; you never have to remember to open it.
-3. The first launch writes a starter `habits.json` with the 12 seed habits, active from the date you
+3. The first launch writes a starter `habits.json` with the 16 seed habits, active from the date you
    installed.
 
 To launch it yourself later, use Spotlight (“HabitTracker”) or `open ~/Applications/HabitTracker.app`.
