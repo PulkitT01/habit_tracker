@@ -10,6 +10,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     private let reminders: ReminderController
     private let dayClock: DayClock
     private let configWatcher: ConfigWatcher
+    private let timeFieldAutoAdvance = TimeFieldAutoAdvance()
     private var terminationSignal: (any DispatchSourceSignal)?
     private var isDuplicateInstance = false
 
@@ -52,6 +53,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationDidFinishLaunching(_ notification: Notification) {
+        timeFieldAutoAdvance.start()
         guard store.startupError == nil, !isDuplicateInstance else { return }
         dayClock.start()
         configWatcher.start()
